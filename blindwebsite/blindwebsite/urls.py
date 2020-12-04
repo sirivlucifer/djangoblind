@@ -17,7 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+   # path('',include("dagit.urls")), # index page
     path('admin/', admin.site.urls),
     path("projects/",include("projects.urls")),
+    path("blog/",include("blog.urls")),
+    path("ourconfig/",include("ourconfig.urls")),
+    path("dagit/",include("dagit.urls")),
    
 ]

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>{{ kategori | title }}</h1>
+    <hr>
+    {% for gonderi in gonderiler %}
+        <h2><a href="{% url 'dagit_detail' gonderi.pk%}">{{ gonderi.title }}</a></h2>
+        <small>
+           
+            Categories:&nbsp;
+            {% for kategori in gonderi.kategoriler.all %}
+            <a href="{% url 'dagit_kategori' kategori.name %}">
+                {{ kategori.name }}
+            </a>&nbsp;
+            {% endfor %}
+        </small>
+        <p>{{ gonderi.body | slice:":400" }}...</p>
+    {% endfor %}
+</div>
+{% endblock %}

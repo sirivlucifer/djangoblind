@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>KATEGORILER</h1>
+    <hr>
+    {% for gonderi in gonderiler %}
+    <h2><a href="{% url 'dagit_detail' gonderi.pk%}">{{ gonderi.title }}</a></h2>
+    <hr>
+   
+   
+    {% endfor %}
+  
+</div>
+{% endblock %}
