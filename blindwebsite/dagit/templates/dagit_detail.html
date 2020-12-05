@@ -4,10 +4,8 @@
     <h1>{{ gonderi.title }}</h1>
     <small>
        
-      
         {% for kategori in gonderi.kategoriler.all %}
-        <a href="{% url 'dagit_kategori' kategori.name %}">
-            
+        <a href="{% url 'dagit_kategori' kategori.name %}">   
         </a>&nbsp;
         {% endfor %}
     </small>
