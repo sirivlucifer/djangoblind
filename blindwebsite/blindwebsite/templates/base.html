@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">Blind Website</a>
+        <a class="navbar-brand" href="http://127.0.0.1:8000/">Gekop Kastamonu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -10,17 +10,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{% url 'project_index' %}">Anasayfa</a>
+              <a class="nav-link" href="{% url 'dagit_index' %}">Kategoriler</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="{% url 'blog_index' %}">Duyurular</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'ourconfig_index' %}">Hakkımızda</a>
+                <a class="nav-link" href="http://127.0.0.1:8000/dagit/2/">İletişim</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'dagit_index' %}">Dagit</a>
-              </li>
+                <a class="nav-link" href="http://127.0.0.1:8000/dagit/11/">Hakkimizda</a> 
+                </li>
           </ul>
         </div>
     </div>

@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from dagit.models import Gonderi
+from django.http import HttpResponse
+
+
 
 def dagit_index(request):
     gonderiler = Gonderi.objects.all()
@@ -24,3 +27,7 @@ def dagit_detail(request, pk):
     
     context = {"gonderi": gonderi}
     return render(request, "dagit_detail.html", context)
+
+def home_view( request, *args, **kwargs):
+    return render(request, "myhome.html", {})
+
