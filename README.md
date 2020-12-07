@@ -14,6 +14,7 @@ $django-admin --version
 
 
 --on cmd--
+
 $pip install django
 
 $pip install django-ckeditor
